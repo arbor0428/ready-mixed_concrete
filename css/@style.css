@@ -1,0 +1,1511 @@
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {margin:0; padding:0; font-family:'Ubuntu','Noto Sans','Noto Sans KR', sans-serif; word-break:keep-all;}
+
+
+.clearfix{*zoom:1}
+.clearfix:after{clear:both;display:block;content:'';}
+
+html,body{font-size: 16px;  overflow-x:hidden;}
+body {color:#878787;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+a {text-decoration:none; color:inherit;}
+ol, ul {list-style:none;}
+table {border-collapse:collapse; border-spacing:0;}
+img{max-width: 100%; vertical-align: top;}
+section {position:relative;}
+
+::-moz-selection {
+   background: #b4d5bf;
+   color: #fff;
+}
+::selection {
+   background: #b4d5bf;
+   color: #fff;
+}
+
+
+.c1 {color:#b4d5bf !important;}
+.c2 {color:#a4ccb1 !important;}
+.c3 {color:#83ba95 !important;}
+.c4 {color:#6e9e86 !important;}
+.c_bk {color:#070b09;}
+.c_w {color:#fff;}
+.c_gry {color:#878787;}
+.c_red {color:#e3200a;}
+
+
+.cv {font-family: 'Caveat', cursive;}
+.gb {font-family: 'GyeonggiBatang';}
+.mr {font-family: 'MaruBuri-Regular';}
+.ns {font-family: 'Noto Serif', serif;}
+.cs {font-family: 'Chosunilbo_myungjo';}
+
+
+.f14{font-size:0.875rem;}
+.f15{font-size:0.938rem;}
+.f16{font-size:1rem;}
+.f18{font-size:1.125rem;}
+.f20{font-size:1.250rem;}
+.f22{font-size:1.375rem;}
+.f24{font-size:1.5rem;}
+.f26{font-size:1.625rem;}
+.f28{font-size:1.75rem;}
+.f30{font-size:1.875rem;}
+.f32{font-size:2rem;}
+.f34{font-size:2.125rem;}
+.f38{font-size:2.375rem;}
+.f42{font-size:2.625rem;}
+.f44{font-size:2.75rem;}
+.f48{font-size:3rem;}
+.f54{font-size:3.375rem;}
+.f62{font-size:3.875rem;}
+.f72{font-size:4.5rem;}
+.f86{font-size:5.375rem;}
+
+
+.m-12{margin-top: 12px;}
+.m-20{margin-top: 20px;}
+.m-24{margin-top: 24px;}
+.m-28{margin-top: 28px;}
+.m-36{margin-top: 36px;}
+.m-45{margin-top: 45px;}
+.m-60{margin-top: 60px;}
+.m-80{margin-top: 80px;}
+.m-72{margin-top: 72px;}
+.m-100{margin-top: 100px;}
+
+.m_10{margin-bottom: 10px;}
+.m_12{margin-bottom: 12px;}
+.m_20{margin-bottom: 20px;}
+.m_24{margin-bottom: 24px;}
+.m_28{margin-bottom: 28px;}
+.m_36{margin-bottom: 36px;}
+.m_45{margin-bottom: 45px;}
+.m_60{margin-bottom: 60px;}
+.m_80{margin-bottom: 80px;}
+.m_72{margin-bottom: 72px;}
+.m_100{margin-bottom: 100px;}
+
+
+.pb_0 {padding-bottom:0 !important;}
+.p-60 {padding-top:60px;}
+.p-80 {padding-top:80px;}
+.p-100 {padding-top:100px;}
+
+.p_60 {padding-bottom:60px;}
+.p_80 {padding-bottom:80px;}
+.p_100 {padding-bottom:100px;}
+
+
+.light{font-weight: 300;}
+.bold1 {font-weight:600;}
+.bold2 {font-weight:700;}
+
+.dp_f {display: -webkit-box; display: -ms-flexbox; display: flex;}
+.dp_sb {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
+.dp_c {-webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.dp_wrap{-ms-flex-wrap: wrap; flex-wrap: wrap;}
+
+.dp_ib{display:inline-block;}
+.dp_b {display:block;}
+.p_r {position:relative;}
+.v_m {vertical-align:middle;}
+
+.txt-c {text-align:center;}
+
+.mo {display:none;}
+.mo-m {display:none;}
+
+.adm-logo {width:150px; height:150px; margin:0 auto;}
+.adm-logo img {width:100%;}
+
+
+
+/* HEADER */
+
+.header {position:fixed; width:100%; padding:.5% 2%; z-index:9999;}
+.header:hover, nav .menu li a:hover header {background:#fff; transition:.2s;}
+
+.header .logo {float:left; background:url('/images/logoTop.png')center center/100% no-repeat; width: 15.73rem; height: 4.375rem; transition:.2s ease;}
+
+.ir {display:block; width:100%; height:100%; text-indent:-9999em;}
+.header .nav {float:left; width:60%; margin-left:2.5rem;}
+
+nav .menu li {display:inline-block; margin-right:.75rem;}
+nav .menu li a {display:block; padding:1.35rem .5rem; font-size:1.125rem;}
+
+
+.menu-btn {position: fixed; top: 2.5%; right: 2%; z-index: 9999;}
+
+.hamberger {width: 3.625rem; height: 2.25rem; position: relative; transform: rotate(0deg); transition: .5s ease-in-out; cursor: pointer;}
+.hamberger span {display: block; position: absolute; height: .25rem; width: 100%; background: #666; opacity: 1; left: 0; transform: rotate(0deg);transition: .25s ease-in-out;}    
+.hamberger span:first-child {top: 0; transform-origin: left center;}
+.hamberger span:nth-child(2) {top: 1rem; transform-origin: left center;}
+.hamberger span:nth-child(3) {top: 2rem; left: 1rem; width: 70%; transform-origin: left center;}
+
+.hamberger.on span:nth-child(1) {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); top: -0.188em; left: 0.5rem;}
+.hamberger.on span:nth-child(2) {width: 0%; opacity: 0;}
+.hamberger.on span:nth-child(3) {-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); top: 2.375rem; left: 0.5rem; width: 100%;}
+
+
+.rnb{position: fixed; top:0; right: -100%; width: 50%; height: 100%;background: #fff; z-index: 9999; transition:right .6s ease; opacity: .96; overflow-y:auto;}
+/* width */
+::-webkit-scrollbar {
+  width: .8rem;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(197,197,197,.5);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(159,191,212,1);
+}
+.rnb.open{right: 0;}
+.rnb-wrap{padding: 8% 10%; }
+.nav-title1{margin-bottom:20px; font-size:1.5rem; font-weight:500;}
+
+.rnb .main-menu{color: #151515; font-size: 1.25rem;}
+.rnb .main-menu li{margin-bottom: .4rem;}
+.rnb .main-menu li a{padding: .3rem 0; display: block; }
+.rnb .sub-menu{color: #151515; font-size:1.188rem; font-weight: 300;}
+.rnb .sub-menu li{margin-bottom: .3rem;}
+.rnb .sub-menu li a{padding: .3rem 0; display: block; }
+.rnb .sub-menu li strong{font-size: 1.438rem;}
+.rnb li.active a{color: #8cb7d5;}
+
+
+
+#gnb h2 {font-size:1.625rem; font-weight:300;}
+#gnb{padding: 3% 2% 5% 4%; }
+.gnb-foot-address {padding: 3% 2% 3% 4%; border-top:1px solid #84c3ae;}
+.gnb-foot-address address,.gnb-foot-address .call-num{width:100%; font-style:normal;}
+.gnb-foot-address .eng-add {color:#818181;}
+
+#gnb .loca-btn {cursor:pointer;}
+
+body.open{width: 100vw; height: 100vh; overflow: hidden;box-sizing: border-box;}
+.bg-blk{position: fixed; top:0; right:-100%; width: 100%; height: 100%; background: rgba(0,0,0,.6); opacity: 0; transition: opacity .4s; z-index: 9;}
+.bg-blk.open{opacity: 1; right:0;}
+
+
+
+/* MAIN-VISUAL 사용안함 - 영상대체*/
+.visual-sec{position:relative; z-index:2; height: 100vh; max-height: 920px;}
+
+.visual01 .visual-bg{background: url(/images/main_visual01_bg.jpg)center center/cover no-repeat;}
+.visual02 .visual-bg{background: linear-gradient(to bottom, #393a3e, #1a1a1c);}
+.visual03 .visual-bg{background: /*url(/images/main_visual03_bg.jpg)*/ url(/images/white_top.jpg)center center/cover no-repeat;}
+.main-visual{height: 100%;}
+.main-visual .swiper-slide{position: relative; height: 100%;}
+.visual-bg{position: absolute; top:50%; left:50%; width: 100%; height: 100%; transform: translate(-50%,-50%);}
+
+.visual01 .visual-img{position: absolute; bottom:0; left:40%;}
+.visual02 .visual-img{position: absolute; bottom:20%; left:15%;}
+
+.visual-txt{position: absolute; transform: translate(-50%,-50%); width: 50%;}
+.visual01 .visual-txt{left:39%; top:45%;}
+
+.visual02 .visual-txt{left:68%; top:45%; width: 40%;}
+.visual02 .visual-txt p {position:relative;}
+/*
+.visual02 .visual-txt p:before {content:""; display:block; width:100px; height:1px; border-bottom:1px solid rgba(255,255,255,.5); margin:80px 0 28px 0;}
+*/
+.visual02 .visual-txt .flag img {vertical-align:middle;}
+
+.visual03 .visual-txt{left:39%; top:48%;}
+/*
+.visual03 .visual-txt p:before {content:""; display:block; width:100px; height:1px; border-bottom:1px solid rgba(0,0,0,.5); margin:50px 0 28px 0;}
+*/
+
+
+
+
+
+.inner{width: 1200px; margin: 0 auto; position: relative; z-index: 1; overflow:hidden;}
+.inner2 {width:1200px; margin:0 auto;}
+
+.section-line-1::after {content: ''; display: block; width: 1px; height: 60vw; background:#e1e1e1; position: absolute; bottom: 0; right: 12%; margin-right:5px; z-index: -1;}
+.section-line-2::after {content: ''; display: block; width: 1px; height: 60vw; background: #e1e1e1; position: absolute; bottom: 0; left: 12%; margin-left:5px; z-index: -1;}
+
+
+/* SEC01 _ DENTAL CLINIC */
+
+.main-con01{ position: relative;  /*margin: 100px 0;*/ margin: 100px 0 0 0; /*background:url('/images/typo_bg2.png') no-repeat left 100%;*/background:url('/images/typo_bg1.png') no-repeat left 90%; /*padding-bottom:100px;*/ padding-bottom:200px;}
+
+.main-con01 .main-tit{margin-bottom: 40px;  position: relative; }
+.main-tit p{display: block; color:#01010d; line-height: 1.3;}
+
+.main-con01:before{ width: 0%; height: 430px; content: ""; display: block; background: #dff0ea; position: absolute; right: 0; top: 54px; }
+.main-con01.on:before{ width: 50%; transition: .5s; }
+.main-con01.on .right{ transform: translate(0,0); opacity: 1; transition: 1.4s; transition-delay: .2s; }
+
+
+.main-con01 .case-slide{width: 994px; margin: 0 auto; }
+.main-con01 .case-slide .wrap2{ overflow: hidden; }
+.main-con01 .case-slide .wrap2:after{content: ''; display: block; clear: both}
+.main-con01 .case-slide .wrap2 .left_w{ float: left; width: 62%; }
+.main-con01 .case-slide .wrap2 .left_w img{ box-shadow: 18px 18px 40px rgba(0,0,0,0.4); display: block; width: 100%; }
+
+
+.main-con01 .case-slide .wrap2 .right_w{ float: left; width: 38%; }
+.main-con01 .case-slide .wrap2 .right_w .text-box {margin-bottom: 30px; }
+.main-con01 .case-slide .wrap2 .right_w .text-box span{ /*font-family: 'Play', sans-serif; */font-size:84px;  color:#fff; font-weight: 600; display: block; position: relative; left: -25px; z-index: -1; }
+.main-con01 .case-slide .wrap2 .right_w .text-box strong{ display: block; font-size:1.75rem;font-weight: 500; letter-spacing: -1px; color:#01010d; position: relative; padding-left: 70px; }
+.main-con01 .case-slide .wrap2 .right_w .text-box strong:before{ content: ""; display: block; width: 50px; height: 1px; background: #01010d; position: absolute; left: 0; top: 50%; transform: translate(0,-50%);}
+.main-con01 .case-slide .wrap2 .right_w .text-box p{ display: block; font-size: 17px; line-height: 1.5; font-weight: 300; /*letter-spacing: -1px; */ color:#878787; position: relative; padding-left: 70px; margin-top: 38px; }
+.main-con01 .case-slide .wrap2 .right_w .next_w{ background-color: #09132f; position: relative; }
+.main-con01 .case-slide .wrap2 .right_w .next_w img{ width: 100%; display: block; opacity: .25; }
+.main-con01 .case-slide .wrap2 .right_w .next_w span{ font-size: 60px; font-weight: 600; color:#c9d6f8; letter-spacing: -1px; position: absolute; left: -6px; top: 50%; transform: translate(0,-50%); opacity: .2;}
+
+
+.main-con01 .case-slide .slick-prev{ position: absolute; left: -103px; top: 41%; transform: translate(0,-49%); width: 103px; height: 103px; background: url('/images/case_prev.png') center center no-repeat; border: none; outline: 0; text-indent: -999em;}
+.main-con01 .case-slide .slick-next{ position: absolute; right: -103px; top: 41%; transform: translate(0,-49%); width: 103px; height: 103px; background: url('/images/case_next.png') center center no-repeat; border: none; outline: 0; text-indent: -999em;}
+
+
+.case-slide .slick-next:before, .slick-prev:before {display:none;}
+
+
+/* SEC02 _ STERILIZATION */
+
+.main-con02{ position: relative; padding-bottom:100px; margin: 100px 0;}
+.main-con02 .main-tit{margin-bottom: 40px;  position: relative; left:50%; margin-left:50px;}
+.main-tit p{display: block; color:#01010d; line-height: 1.3;}
+
+.main-con02:before{width: 0%; height: 430px; content: ""; display: block; background: #dff0ea; position: absolute; left: 0; top: 54px;}
+.main-con02.on:before{ width: 50%; transition: .5s; }
+.main-con02.on .right{ transform: translate(0,0); opacity: 1; transition: 1.4s; transition-delay: .2s; }
+
+.main-con02 .case {position:relative; width: 85%; height:400px; background:#000; margin: 0 auto; overflow:hidden;}
+.main-con02 .case iframe {width:100%; height:150%; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+
+
+.main-con04{ position: relative;  /*margin: 100px 0;*/ margin: 100px 0 0 0; /*background:url('/images/typo_bg2.png') no-repeat left 100%;*/background:url('/images/typo_bg2.png') no-repeat left 90%; /*padding-bottom:100px;*/ padding-bottom:200px;}
+.main-con04 .main-tit{margin-bottom: 40px;  position: relative; }
+
+.main-tit p{display: block; color:#01010d; line-height: 1.3;}
+.main-tit p:first-child {position:relative; display:inline-block;}
+.main-tit p:first-child:after {content:""; display:block; position:absolute; width:100%; height:1px; margin-top:5px; background:#83ba95;}
+
+
+/* SEC03 _ DOCTER */
+.main-con03 {padding:120px 0; background:#f1f2f3; position:relative; min-height:580px; background:url("/images/main-con03_bg.jpg")no-repeat top right; background-size:cover;}
+.main-con03 .imgs{position: absolute; right:16%;  bottom:0; width:38%;}
+
+.main-con03 .more-bt {position:relative; display:inline-block; margin-top:100px;}
+.main-con03 .more-bt:after {content:""; display:block; position:absolute; width:100%; height:1px; margin-top:5px; background:#878787;}
+.main-con03 .more-bt:hover {color:#83ba95; transition:.2s;}
+
+
+
+
+.main-con04:before{ width: 0%; height: 430px; content: ""; display: block; background: #dff0ea; position: absolute; right: 0; top: 54px; }
+.main-con04.on:before{ width: 50%; transition: .5s; }
+.main-con04.on .left{ transform: translate(0,0); opacity: 1; transition: 1.4s; transition-delay: .2s; }
+
+
+/* SEC04 _ INTERIOR */
+.main-con04 .case-slide{ width: 994px; margin: 0 auto; }
+.main-con04 .case-slide .wrap2{position:relative; overflow: hidden; }
+.main-con04 .case-slide .wrap2:after{content: ''; display: block; clear: both}
+.main-con04 .case-slide .wrap2 .left_w{ float: left; width: 100%; height:430px;}
+.main-con04 .case-slide .wrap2 .left_w img{ box-shadow: 18px 18px 40px rgba(0,0,0,0.4); display: block; width: 100%; }
+
+
+.main-con04 .case-slide .wrap2 .right_w{position:absolute; bottom:0;width: 38%; z-index:10;}
+.main-con04 .case-slide .wrap2 .right_w .text-box {background:rgba(255,255,255,.5);}
+.main-con04 .case-slide .wrap2 .right_w .text-box span{ /*font-family: 'Play', sans-serif; */font-size:84px;  color:#fff; font-weight: 600; display: block; position: relative; left: -25px; z-index: -1; }
+.main-con04 .case-slide .wrap2 .right_w .text-box strong{ display: block; font-size: 28px; font-weight: 500; letter-spacing: -1px; color:#01010d; position: relative; padding-left: 70px; }
+.main-con04 .case-slide .wrap2 .right_w .text-box strong:before{ content: ""; display: block; width: 50px; height: 1px; background: #01010d; position: absolute; left: 0; top: 50%; transform: translate(0,-50%);}
+.main-con04 .case-slide .wrap2 .right_w .text-box p{ display: block; font-size: 17px; line-height: 1.5; font-weight: 300; /*letter-spacing: -1px; */ color:#878787; position: relative; padding-left: 70px; margin-top: 20px; padding-bottom:20px;}
+.main-con04 .case-slide .wrap2 .right_w .next_w{ background-color: #09132f; position: relative; }
+.main-con04 .case-slide .wrap2 .right_w .next_w img{ width: 100%; display: block; opacity: .25; }
+.main-con04 .case-slide .wrap2 .right_w .next_w span{ font-size: 60px; font-weight: 600; color:#c9d6f8; letter-spacing: -1px; position: absolute; left: -6px; top: 50%; transform: translate(0,-50%); opacity: .2;}
+
+
+.main-con04 .case-slide .slick-prev{ position: absolute; left: -103px; top: 49%; transform: translate(0,-49%); width: 103px; height: 103px; background: url('/images/case_prev.png') center center no-repeat; border: none; outline: 0; text-indent: -999em; }
+.main-con04 .case-slide .slick-next{ position: absolute; right: -103px; top:49%; transform: translate(0,-49%); width: 103px; height: 103px; background: url('/images/case_next.png') center center no-repeat; border: none; outline: 0; text-indent: -999em;}
+
+
+.main-con04 .case {position:relative; width: 85%; height:500px; background:#000; margin: 0 auto; overflow:hidden;}
+.main-con04 .case iframe {width:120%; height:200%; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+
+
+/* SEC05 _ LOACTION */
+.main-con05{position:relative; background:#f1f1f1;}
+.main-con05 .maps, .main-con05 .location {float:left; width:50%; max-height:780px; overflow:hidden;}
+.main-con05 .location {padding:50px 0 40px 0;}
+.main-con05 .location .text-box {padding:50px 0 30px 80px;}
+
+.time-list li > ul li {float:left; margin:5px 0; font-size:1.250rem;}
+.time-list li > ul li:first-child {width:12%;}
+
+.location { position: relative; background:url('/images/loca_bg.png') no-repeat right -10% bottom 20%;}
+.location .lnr {vertical-align:middle; display:inline-block; margin:-6px 12px 0 0;}
+
+.mo-map-btn {font-size:0.875rem; position:absolute; top:2px; right:20%; padding:10px 14px; background:#83ba95; color:#fff; border-radius:4px;vertical-align:middle; display:none;}
+
+/* SEC06 _ STORY */
+.main-con06{ position: relative; margin-top:100px; background:url('/images/typo_bg3.png') no-repeat top right -5px;}
+.relive-story-wrap {padding: 5% 0 5% 17%;}
+.story-slide figure {max-width: 282px;}
+.story-slide figcaption {padding: 16% 3% 3%; text-align: center; word-break: keep-all;}
+
+.relive-story-wrap  .swiper-container {margin-top:50px; padding-bottom:50px;}
+.relive-story-wrap .swiper-container-horizontal>.swiper-scrollbar {position: absolute; left: 1%; bottom: 3px; z-index: 50; height: 5px; width: 80%;}
+.relive-story-wrap .swiper-scrollbar-drag {/*width:25% !important;*/ background: #83ba95; }
+
+.relive-story-wrap p.top {position:relative; display:inline-block;}
+.relive-story-wrap p.top:after {content:""; display:block; position:absolute; width:100%; height:1px; margin-top:5px; background:#83ba95;}
+
+
+/* SEC07 _ SNS LINK */
+.main-con07{ position: relative;}
+.sns-link-bnr{padding: 2% 0;}
+.sns-bnr-list li{width: 7.5rem; display: inline-block; margin: 2.4%;}
+.sns-bnr-list li a{display: block; width: 100%; height: 100%;}
+.sns-icon-xl{width: 7.5rem;height: 7.5rem;display: inline-block; background:#9fa0a0 url('/images/sns_icon.png')top left/400% no-repeat; border-radius: 50%;}
+.sns-icon-xl.insta{}
+.sns-icon-xl.yotub{background-position: 33.3333% 0}
+.sns-icon-xl.kakao{background-position: 66.6666% 0}
+.sns-icon-xl.blog{background-position: 100% 0}
+
+
+
+
+
+.clean-sys {
+    /*padding: 0 0 4%;*/
+	width: 100%; height: 80vh; position: relative; top: 0; left: 0; overflow:hidden; 	z-index:10;
+}
+
+.clean-video-bg {
+	/*
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+	*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	/* overflow: hidden; */
+}
+
+.clean-video-bg iframe {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.clean-container {
+    width: 96%;
+    padding: 0 15px;
+    position: relative;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.clean-box {
+    float: right;
+    background: hsla(0,0%,97.3%,.88);
+    height: 100%;
+    padding: 8% 3.3% 6.6%;
+    width: 50%;
+    max-width: 425px;
+}
+
+.clean-box .simbol {width:75px; height:75px; background:url("/images/simbol75.png")no-repeat center center; margin:0 auto 20px;}
+.border-line {margin:30px 0; height:1px; border-bottom:1px solid #d1d1d1;}
+
+.loca-times {width:70%; margin:0 auto; }
+.loca-times li.col {float:left; min-height:30px; line-height:1.5;}
+.loca-times li.col-1 {width:35%; font-weight:500;}
+
+.loca-times li.col-2 {width:65%;}
+
+.loca-bt {display:inline-block; vertical-align:top; margin-left:4px; padding:5px; font-size:1.375rem; color:#fff; background:#83ba95; border-radius:100%;}
+
+
+
+
+
+
+
+
+/* sub01/sub01 브랜드스토리 */
+
+.brandstory-top {position:relative;}
+.brandstory-bg {position:relative; height:100vh; max-height:830px; background:url("/images/brandstory_new.jpg")no-repeat center center; /*-webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;*/}
+
+@-webkit-keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.1) translateY(15px);
+            transform: scale(1.1) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.1) translateY(15px);
+            transform: scale(1.1) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+
+.brandstory-top .top-content {position:absolute; width:100%; margin:0 auto; top:28%;/* text-align:center;*/ z-index:9;}
+
+.drlee-profile {position:absolute; left:50%; margin-left:-200px; bottom:0; width:640px;}
+.typing-txt {display: none;}
+.typing {display: inline-block; animation-name: cursor; animation-duration: 0.3s; animation-iteration-count: infinite; font-size:4.5rem;color:#6e9e86 !important;font-family: 'Caveat', cursive;} 
+
+
+.sub-section {position:relative; padding:16px 0;}
+.brand-sec01 {background:url('/images/brandtypo_bg.png') no-repeat bottom right;}
+
+
+.sub-section h1.brand-tit {text-align:center;}
+.sub-section h1.brand-tit:before {content:""; display:block; width:1px; height:100px; background:#070b09; margin:0 auto 20px;}
+.text-stroke {color:#fff; -webkit-text-stroke: 1px #070b09;}
+
+
+.con-wrap {position:relative; width:1440px; margin:0 auto;}
+.con {position:relative; width:1200px; margin:0 auto;}
+
+.visual-img-bg {position:absolute; width:20%; height:480px; background:#d9e6e0;}
+.visual-img-txt {position:absolute; left:-50px; bottom:20px; z-index:1; letter-spacing:0.1em; writing-mode: vertical-rl;}
+.box-2dp {padding-top:80px; box-sizing:border-box;}
+.box-2dp .img, .box-2dp .txt {float:left; width:50%; box-sizing:border-box;}
+.box-2dp .img {height:480px; background:url("/images/brand_visual.jpg")no-repeat center center; cursor:pointer;}
+/*.box-2dp .img:hover img {display:none; transition:1s;}*/
+.box-2dp .img:hover {background:url("/images/brand_visual_a.jpg")no-repeat center center;}
+.box-2dp .txt {padding:80px 60px;}
+
+.brand-sec02 {padding:100px 0;}
+.brand-sec02 .brand-txt {text-align:center;}
+.brand-sec02 .brand-txt:before {content:""; display:block; width:42px; height:42px; background:url("/images/quotes1.png")no-repeat center center; margin:0 auto 20px;}
+.brand-sec02 .brand-txt:after {content:""; display:block; width:42px; height:42px; background:url("/images/quotes2.png")no-repeat center center; margin:20px auto 0;}
+
+
+.brand-sec03 {padding:100px 0; background:#f6f7f9;}
+
+.brand-sub-tit {position:relative; display:inline-block;}
+.brand-sub-tit:after {content:""; display:block; position:absolute; width:100%; height:1px; margin-top:5px; background:#83ba95;}
+
+
+.box-2dp .lf, .box-2dp .rh {float:left; width:50%;}
+
+
+.brand-sec04 {padding:100px 0;}
+
+.brand-sec05 {height:490px; background:url("/images/sec05_bg.jpg")no-repeat top center;  background-attachment:fixed;}
+
+
+
+
+/* sub01/sub02 이준영대표원장 */
+
+.doctor-top {position:relative; height:100vh; max-height:830px; overflow:hidden; background:url("/images/doctor_top.jpg")no-repeat center right; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+/*
+.doctor-bg {position:relative; height:100vh; max-height:830px; background:url("/images/doctor_top.jpg")no-repeat center right; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+*/
+.doctor-top .con {position:initial !important;}
+.doctor-top .top-content {/*position:relative;*/ position:absolute; /*width:100%; margin:0 auto; top:20%;*/ /*top:170px;*/ top:20%; z-index:9;}
+.doctor-top .top-content .tit {margin:20px 0 25px 0; line-height:1.5;}
+.doctor-top .imgs {position: absolute; right:8%; width:40%; bottom:0;}
+
+.txt-list li {margin:5px 0;}
+.txt-list li:before {content:""; display:inline-block; position:relative; top:-3px; margin-right:8px; width:3px; height:3px; background:#01010d;}
+
+.sub-section .con .top {position:relative;display:inline-block;}
+.sub-section .con .top:after {content:""; display:block; position:absolute; width:100%; height:1px; margin-top:5px; background:#83ba95;}
+
+
+.drlee-point .title-wrap {text-align:center;}
+.drlee-point .title-wrap p.f38 {display:inline-block; padding:4px 12px; background:#a2c0aa;}
+
+.point-box-wrap {display:flex; width:100%;}
+.point-box-wrap .point-box {margin-top:50px; width:33.33%; text-align:center;}
+
+
+.dr-fact02, .dr-fact04 {padding:100px 0;}
+
+.listen3{padding:5% 4% 0 4%;}
+
+.listen3 ul{position: relative;}
+
+.listen3 li{width: 25%; word-break: keep-all; text-align:center;}
+/*
+.listen3 li:nth-child(1) p{max-width: 310px; margin: auto;}
+.listen3 li:nth-child(2) p{max-width: 270px; margin: auto;}
+*/
+.listen3 .circle{width:70%; border:1px solid #d1d1d1; background: #fff; border-radius:50%; margin:0 auto 8%; position: relative;}
+.listen3 .circle:after{content:''; position: absolute; top:50%; left:100%; width: 160%; height: 1px; background: #d1d1d1; transform: translateX(-50%); z-index: -1;}
+.listen3 li:last-child .circle:after{display: none;}
+.circle-txt{position: relative; padding: 100% 0 0; }
+.circle-txt-inner{position: absolute; top:50%; left:50%; width: 100%; transform: translate(-50%,-50%);}
+
+
+.dp-box {position: relative; margin:50px 0;}
+.dp-box.tp .img-area {float: left;}
+.dp-box .img-area {width:50%; overflow:hidden;}
+
+
+.dp-box.tp .title-area {float: right;}
+.dp-box .title-area {width:50%; /*padding:40px;*/ box-sizing:border-box;}
+
+.dp-box.bt .img-area {float: right;}
+.dp-box.bt .title-area {float: left;}
+
+
+
+.sub-section .img-area, .title-area {width:50%; word-break:keep-all;}
+.dr-fact02 .title-area {padding-left: 4.5%; padding-right: 2%;}
+
+/* 논문 */
+.doctorlee-paper{margin-top:100px; padding:5% 0;  background: linear-gradient(to bottom right,#eff4f1,#e4d8ce);}
+.certi-slide{width:97%;max-width:1750px;padding:0 0 3.6%; margin:0 auto;}
+.certi-slide .swiper-slide{border:1px solid #e4e4e4}
+.certi-slide .swiper-slide img{width:100%}
+.certi-slide.swiper-container-horizontal>.swiper-scrollbar{width:56%;left:22%}
+.certi-slide .swiper-scrollbar-drag {background:#83ba95;}
+
+
+/* sub02/sub01 임플란트 */
+.implant-top {position:relative;}
+.implant-bg {position:relative; height:100vh; max-height:830px; background:url("/images/implant_top.jpg")no-repeat center center; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+
+.implant-top .top-content {position:absolute; width:100%; margin:0 auto; top:35%; z-index:9;}
+.implant-top .top-content .tit {margin:40px 0 30px 0; line-height:1.5;}
+.implant-top .top-content .tit .names {letter-spacing:0.3em;}
+
+.title-area ul li.tit:before {content:""; display:inline-block; position:relative; top:-5px; left:-10px; width:3px; height:3px; background:#01010d;}
+
+
+
+.implant02, .implant03, .implant04, .implant05, .implant06 {padding:100px 0;}
+
+.implant02{ position: relative; /* padding-bottom:100px;*/ margin-bottom:100px; background:url('/images/benefit_bg.png') no-repeat right 100%;}
+
+.implant02 .title-area {padding-left: 4.5%; padding-right: 2%;}
+.implant04 .title-area {padding-right: 2%;}
+
+.implant03 {background:#f3f3f3;}
+
+.thumbs .swiper-scrollbar-drag {background:#83ba95;}
+
+.implant05 {background:#070b09;}
+
+.thumbs div.inner {float:left; width:25%; padding:0 10px; box-sizing:border-box; }
+.thumbs div.inner p > span {word-break:keep-all;}
+
+.sub-bna-img .img-area {
+    position: relative;
+    width: 48.8%;
+    max-width: 683px;
+}
+
+.sub-bna-img:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("/images/arr.png")0 0/200% no-repeat;
+    width: 1.438rem;
+    height: 3.938rem;
+    transform: translate(-50%,-50%);
+}
+
+.sub-qna-list li {
+    border-top: 1px solid #dcdcdc;
+}
+.sub-qna-list li:last-child {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+
+.sub-qna-list .q-txt {
+    color: #070b09;
+    font-size: 1.25rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-qna-list .a-txt {
+    font-size: 1.125rem;
+    background: #f5f5f5;
+    border-top: 1px solid #dcdcdc;
+}
+
+
+.sub-qna-list .a-txt, .sub-qna-list .q-txt {
+    padding: 1.875rem 3.5rem;
+    line-height: 1.5;
+}
+
+.sub-qna-list .q-txt:before {
+    content: "Q.";
+    position: absolute;
+    left: .8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+	color:	#83ba95;
+}
+
+.sub-qna-list .q-txt:after {
+    content: "+";
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    top: 50%;
+    transform: translateY(-50%);
+	color:#878787;
+}
+
+
+
+.img-area .swiper-container {
+	width: 100%;
+	height: 100%;
+
+	box-sizing:border-box;
+}
+
+.img-area .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.img-area .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border:1px solid #e1e1e1;
+	box-sizing:border-box;
+}
+
+.img-area .swiper-scrollbar-drag {background:#83ba95;}
+
+
+
+.numbox {position: relative; margin:80px 0;}
+.numbox.tp .imgbox {float: left;}
+.numbox .imgbox {width:50%; overflow:hidden;}
+.numbox .imgbox img {transition: all .15s ease-in-out;}
+.numbox .imgbox img:hover {transform:scale(1.05); cursor:pointer;}
+
+.numbox.tp .txtbox {float: right;}
+.numbox .txtbox {width:50%; padding:40px; box-sizing:border-box;}
+
+.numbox.bt .imgbox {float: right;}
+.numbox.bt .txtbox {float: left;}
+
+
+
+
+/* sub03/sub01 라미네이트 */
+.lami-top {position:relative;}
+.lami-bg {position:relative; height:100vh; max-height:830px; background:url("/images/lami_top.jpg")no-repeat center center; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+
+.lami-top .top-content {position:absolute; width:100%; margin:0 auto; top:35%; z-index:9;}
+.lami-top .top-content .tit {margin:40px 0 30px 0; line-height:1.5;}
+.lami-top .top-content .tit .names {letter-spacing:0.3em;}
+
+
+.lami01, .lami02, .lami03, .lami04, .lami05, .lami07, .lami08 {padding:100px 0;}
+
+.lami03 .title-area {padding-left: 4.5%; padding-right: 2%;}
+
+.list3 li{display: inline-block; padding: 2%;width:30%; border-right:1px dotted #c3c3c3; vertical-align: middle; box-sizing:border-box;}
+.list3 li:last-child{border-right:0;}
+
+
+.lami04 { position: relative; /*margin-top:80px;*/ background:url('/images/oral_bg.png') no-repeat top right;}
+
+.lami06 {padding-bottom:100px;}
+.lami06 .lami-txt {text-align:center;}
+.lami06 .lami-txt:before {content:""; display:block; width:422021-10-07px; height:42px; background:url("/images/quotes1.png")no-repeat center center; margin:0 auto 20px;}
+.lami06 .lami-txt:after {content:""; display:block; width:42px; height:42px; background:url("/images/quotes2.png")no-repeat center center; margin:20px auto 0;}
+
+.lami07 {background:#070b09;}
+
+
+/*
+.more-oral-bt {display:inline-block; width:24px; height:24px; background:red; cursor:pointer;}
+*/
+.hide-con {position:relative; top:80px;}
+
+
+
+/* sub04/sub01 치아미백 */
+.white-top {position:relative;}
+.white-bg {position:relative; height:100vh; max-height:830px; background:url("/images/white_top.jpg")no-repeat center center; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+
+.white-top .top-content {position:absolute; width:100%; margin:0 auto; top:35%; z-index:9;}
+.white-top .top-content .tit {margin:40px 0 30px 0; line-height:1.5;}
+
+.white01, .white02, .white04 {padding:100px 0;}
+
+.white02 .title-area {padding-left: 4.5%; padding-right: 2%;}
+
+
+.list4 li{float:left; padding: 2%; width:25%; border-right:1px dotted #c3c3c3; vertical-align: middle; box-sizing:border-box;}
+.list4 li:last-child{border-right:0;}
+
+
+.white04 {background:#070b09;}
+
+/* sub05/sub01 충치예방보존치료 */
+.treat-top {position:relative;}
+.treat-bg {position:relative; height:100vh; max-height:830px; background:url("/images/treat_top.jpg")no-repeat center center; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+
+.treat-top .top-content {position:absolute; width:100%; margin:0 auto; top:32%; z-index:9;}
+.treat-top .top-content .tit {margin:40px 0 30px 0; line-height:1.5;}
+
+.treat01, .treat02, .treat03, .treat04, .treat05 {padding:100px 0;}
+
+.sub-tab  {text-align:center;}
+.sub-tab li {display:inline-block;padding:1rem; margin:0 .4rem;}
+.sub-tab li:hover {color:#a4ccb1; transition:.2s;}
+.treat03, .treat05 {background:#f9f9f9;}
+ 
+
+.box-3 .box-3-inners {float:left; width:33.33%; padding:40px 10px; box-sizing:border-box; cursor:pointer;}
+.box-3 .b1 {background:#c5e1c8;}
+.box-3 .b2 {background:#c4e3dd;}
+.box-3 .b3 {background:#fae69d;}
+
+
+.b1:before, .b2:before, .b3:before {content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0;  -webkit-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: 50% 100%; transform-origin: 50% 100%; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out;}
+
+.box-3 .b1:before {background:#b4d7b7;}
+.box-3 .b2:before {background:#b3d9d2;}
+.box-3 .b3:before {background:#f8dd86;}
+
+
+.b1:hover:before, .b2:hover:before, .b3:hover:before {-webkit-transform: scaleY(1); transform: scaleY(1); -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);}
+
+
+.box-2 .box-2-inner {float:left; width:50%; padding:10px; box-sizing:border-box;}
+.box-2 .box-2-inner > .con-box {position:relative; min-height:65px; background:#fff;}
+
+.box-2 .box-2-inner > .con-box:hover {box-shadow: 0.063rem 0.313rem 0.25rem 0.2rem rgba(196, 216, 206, .5);}
+.box-2 .box-2-inner > .con-box > span.num {position:absolute; top:-8px; left:-8px; font-size:1.5rem; padding:14px; background:#6e9e86; color:#fff; border-radius:0 0 25px 0;}
+.box-2 .box-2-inner > .con-box > p {line-height:65px; padding-left:80px; box-sizing:border-box;}
+
+
+.box-3 .box-3-inner {float:left; width:33.33%; box-sizing:border-box;}
+.box-3 .box-3-inner div {min-height:185px; padding:40px 0; box-sizing:border-box;}
+.box-3 .box-3-inner:not(:last-child) {border-right:1px dotted #d1d1d1;}
+
+
+.box-4 .box-4-inner {float:left; width:25%; box-sizing:border-box;}
+.box-4 .box-4-inner div {/*border:1px solid #83ba95;  background:#fff;*/ min-height:185px; padding:40px 0; box-sizing:border-box;}
+.box-4 .box-4-inner:not(:last-child) {border-right:1px dotted #d1d1d1;}
+
+
+.treat-txt {text-align:center;}
+.treat-txt:before {content:""; display:block; width:42px; height:42px; background:url("/images/quotes1.png")no-repeat center center; margin:0 auto 20px;}
+.treat-txt:after {content:""; display:block; width:42px; height:42px; background:url("/images/quotes2.png")no-repeat center center; margin:20px auto 0;}
+
+
+ul.sub-tabs {display: flex; justify-content: center; flex-wrap: wrap;}
+ul.sub-tabs li {font-size:1.250rem; padding: 7px 15px;  color: #070b09;cursor:pointer;}
+ul.sub-tabs li:not(:last-child) {margin-right: 20px;}
+ul.sub-tabs li.sub-active {border-bottom:4px solid #99bbaa;}
+
+
+.sub-tab-content {margin-top:80px;}
+
+.cureSwiper {margin-top:50px;}
+.cureSwiper .cure-imgs, .cureSwiper .cure-txts {float:left; width:50%; padding:30px; box-sizing:border-box; background:#fff;}
+
+.bg-area {background:#f1f1f1;}
+
+
+.sub6-2-point03-item{width:21.4%; margin-right:3.6%; text-align: center; position: relative;}
+.sub6-2-point03-item::after{content:''; position: absolute; top: 26%; right:-12%; background: url("/images/step_arrow_right.png")0 0/100% no-repeat; width:.5rem; height:1.438rem; }
+.sub6-2-point03-item:last-child{margin-right:0}
+.sub6-2-point03-item:last-child::after{display: none;}
+
+.sub6-2-point03-img{ padding:100% 0 0; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; overflow: hidden; background: url("/images/gum_step.png")0 0/400% no-repeat; margin-bottom: 1.8rem;}
+
+.sub6-2-point03-img.progress01{background-position: 0 0;}
+.sub6-2-point03-img.progress02{background-position: 33.3333% 0;}
+.sub6-2-point03-img.progress03{background-position: 66.6666% 0;}
+.sub6-2-point03-img.progress04{background-position: 100% 0;}
+
+.sub6-2-point03-item hr {border: 0; border-bottom: 1px solid #d9e6e0; margin: 1.25rem 0; padding: 0;}
+
+
+
+/* sub06/sub01 사랑니발치 */
+.wisdom-top {position:relative;}
+.wisdom-bg {position:relative; height:100vh; max-height:830px; background:url("/images/wisdom_top.jpg")no-repeat center center; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+
+.wisdom-top .top-content {position:absolute; width:100%; margin:0 auto; top:30%; z-index:9;}
+.wisdom-top .top-content .tit {margin:40px 0 60px 0; line-height:1.5;}
+
+.wisdom01, .wisdom02, .wisdom03, .wisdom04, .wisdom05 {padding:100px 0;}
+
+.wisdom03 {background:#070b09;}
+
+
+/* sub07/sub01 온라인상담 */
+.cs-top {position:relative;}
+.cs-bg {position:relative; height:100vh; max-height:430px; background:url("/images/cs_top2.jpg")no-repeat center center; -webkit-animation: kenburns-bottom 2s ease-out both;animation: kenburns-bottom 2s ease-out both;}
+
+.cs-top .top-content {position:absolute; width:100%; margin:0 auto; top:30%; z-index:9;}
+.cs-top .top-content .tit {margin:70px 0 40px 0; line-height:1.5;}
+
+.cs01 {padding:100px 0;}
+
+.csnav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top:30px;
+}
+
+.csnav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.csnav a {
+  display: block;
+  font-size:1.250rem;
+  color: #070b09;
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+.csnav a.active {border-bottom:4px solid #99bbaa;}
+
+
+
+/* 빠른상담신청폼 */
+.contact-area {padding:2% 0; background:#d9e6e0;}
+.contact-area .contact-box {float:left; box-sizing:border-box;}
+.contact-area .contact-box .counsel-tit {margin-left:2px; letter-spacing:0.35rem;}
+.contact-area .contact-box:first-child {width:25%; padding-left:80px;}
+.contact-area .contact-box:last-child {width:75%;}
+.form-flex-group {float:left;  margin-right:12px;}
+
+/* 진료과목 select */
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  min-width:220px;
+  height: 3.53333em;
+  padding: 0 1.4em;
+  /*font-size: 0.9375em;*/
+  font-weight: 400;
+  line-height: 1.5;
+  color: inherit;
+  vertical-align: middle;
+  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%235a5c69' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat;
+  border:none;
+  border-radius: 0.35rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-select2 {height: 2.53333em;}
+
+input[type="text"].form-control{
+    display: block;
+    width: 100%;
+    min-width: inherit;
+    max-width: 29.2em;
+    height: 3.53333em;
+    background-color: #fff;
+    /*font-size: 0.9375em;*/
+    padding: 0 1.4em;
+    border: 0;
+   border-radius: 0.35rem;
+	box-sizing:border-box;
+}
+
+input[type="text"].form-control2 {height: 2.53333em; border: 1px solid #e1e1e1;}
+
+input[type="password"].form-control {
+    display: block;
+    width: 100%;
+    min-width: inherit;
+    max-width: 29.2em;
+    height: 2.53333em;
+    background-color: #fff;
+    /*font-size: 0.9375em;*/
+    padding: 0 1.4em;
+    border: 1px solid #e1e1e1;
+   border-radius: 0.35rem;
+	box-sizing:border-box;
+}
+
+
+.form-group .form-control {
+    margin-bottom: 10px;
+}
+
+textarea.form-control {
+    width: 100%;
+	min-width:300px;
+    padding: 1.6em 1.4em;
+    background-color: #fff;
+    border-radius: 0.35rem;
+    border: 0;
+    margin: 0;
+	
+    background-color: #fff;
+    overflow: auto;
+    min-height: 100px;
+    -webkit-appearance: none;
+    resize: none;
+	box-sizing:border-box;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #bac8f3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(196, 216, 206, .5);
+}
+
+ .chk_area input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+	font-size:0.875rem;
+}
+
+ .chk_area a {font-size:0.875rem;}
+
+/* 상담신청 버튼 */
+ .form-flex-group button {
+    cursor: pointer;
+    -webkit-appearance: none;
+	border: none;
+	background:none;
+}
+
+.reservation-box-txt {
+    display: inline-block;
+    font-size: 1.125rem;
+    color: #fff;
+	background:#6e9e86;
+    line-height: 3em;
+    padding: 0 1.8em;
+	border-radius:8px;
+	margin-left:20px;
+}
+
+.reservation-box-txt:hover {background:#4f7663; transition:.2s;}
+
+
+/*온라인상담*/
+.clause_list {
+    margin-bottom: 30px;
+}
+.clause_list h5 {
+    color:#070b09;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.clause_list li .textarea_box_border {
+    border: 1px solid #dedede;
+   padding-bottom:20px;
+   padding-right:0;
+}
+
+.clause_list li .textarea_box {
+	font-size:1rem;
+	word-break:keep-all;
+    height: 150px;
+    overflow-y: auto;
+	 padding: 20px 30px;
+}
+
+
+/* ================== RESPONSIVE ================== */ 
+
+
+/* 1800 */
+@media screen and (max-width:1800px) {
+	html, body {font-size:15px;}
+	.main-con03 .imgs {right:0%; width:50%;}
+	.section-line-1::after, .section-line-2::after {display:none;}
+}
+
+/* 1650 */
+@media screen and (max-width:1650px) {
+	
+}
+
+/* 1440 */
+@media screen and (max-width:1440px) {
+	.brand-sec01 {padding-bottom:200px;}
+
+}
+
+/* 1366 */
+@media screen and (max-width:1340px) {
+	html, body {font-size:14px;}
+	.rnb{width: 80%;}
+
+	/* 원장님소개 */
+	.doctor-top .top-content {padding:0 15px;}
+	/* 빠른상담신청폼 */
+	.contact-area .contact-box:first-child {width:22%; padding-left:80px;}
+	.contact-area .contact-box:last-child {width:78%;}
+
+}
+
+
+/* 1280 */
+@media screen and (max-width:1280px) {
+	.header .nav {display:none;}
+	.header .logo {width: 15.25rem;height: 5rem;}
+	.menu-btn {right:1.25rem;}
+
+	.mo-m {display:block;}
+
+	/*.section-line-1::after, .section-line-2::after {display:none;}*/
+	 
+	.inner{width: 90%;}
+	.inner2 {width:90%;}
+	.con {width:90%;}
+
+	.main-con01 .case-slide .slick-prev{ display: none !important; }
+	.main-con01 .case-slide .slick-next{ display: none !important; }
+
+
+	.main-con05 .maps, .main-con05 .location {width:100%;}
+
+	.con-wrap {width:100%;}
+	.contact-area {padding:8% 0;}
+	.contact-area .contact-box:first-child {width:100%; text-align:center; padding-left:0;}
+	.contact-area .contact-box:last-child {width:100%; padding:0 0px; margin-top:20px;}
+
+
+	.form-flex-group {float:none; width:100%; padding:0 20px; box-sizing:border-box;}
+	.form-flex-group.form-btns {text-align:center; margin-top:30px;}
+
+
+	input[type="text"].form-control{max-width: 100%;}
+	textarea.form-control {min-width:100%;}
+	.reservation-box-txt {margin-left:0;}
+
+	/*브랜드스토리*/
+	.brandstory-bg {background:url("/images/brandstory_new.jpg")no-repeat top right 40%;}
+	.box-2dp .lf, .box-2dp .rh {width:100%;}
+	.box-2dp .rh {margin-top:30px;}
+
+
+}
+
+
+/* 1024 labtop */
+@media screen and (max-width:1024px) {
+	 html, body {font-size:13px;}
+	 .main-con03 {background:url("/images/main-con03_bg.jpg")no-repeat top left;}
+	 .main-con03 .imgs {width:70%;}
+	
+/*
+	.hamberger{width: 3rem; height: 2rem;}
+	.hamberger span{height: 0.25rem;}
+	.hamberger span:nth-child(1){top:0}
+	.hamberger span:nth-child(2){top:.8rem}
+	.hamberger span:nth-child(3){top:1.6rem; left:.8rem; width: 75%;}
+	.hamberger.open span:nth-child(1){top:-0.15rem;}
+	.hamberger.open span:nth-child(3){top:1.95rem;}
+
+	.f14{font-size:0.9rem;}
+	.f16{font-size:1rem;}
+	.f18{font-size:1rem;}
+	.f20{font-size:1rem;}
+	.f22{font-size:1.1rem;}
+	.f24{font-size:1.2rem;}
+	.f26{font-size:1.2rem;}
+	.f30{font-size:1.3rem;}
+	.f32{font-size:1.4em;}
+
+	.f38{font-size:1.75rem;}
+	.f42{font-size:1.75rem;}
+	.f44{font-size:1.75rem;}
+	.f48{font-size:1.9rem;}
+	.f54{font-size:2rem;}
+	.f86{font-size:4.063rem;}
+*/
+	.f38{font-size:1.75rem;}
+	.f42{font-size:2.125rem;}
+	
+	.m_12{margin-bottom: .7rem;}
+	.m_20{margin-bottom: .8rem;}
+	.m_28{margin-bottom: 1rem;}
+	.m_36{margin-bottom: 1.25rem;}
+	.m_45{margin-bottom: 1.6rem;}
+	.m_60{margin-bottom: 1.8rem;}
+	.m_72{margin-bottom: 2.0rem;}
+	.m_100{margin-bottom: 2.4rem;}
+
+
+	.main-con01 .case-slide{ width: 100%; }
+
+	.clean-sys {height: 56.25vw;}
+
+	.relive-story-wrap {padding: 16% 0 16% 8%;}
+
+	.sns-bnr-list li {width: 22%;margin: 1%; vertical-align: top;}
+	.sns-icon-xl {width: 14vw; height: 14vw;}
+
+	
+	/*이준영대표원장*/
+	.doctor-top {background:#e5eaee; url("/images/doctor_top.jpg")no-repeat center left -10%; }
+
+	.dr-fact02, .dr-fact03, .dr-fact04 {padding:0 0;}
+	.dp-box.tp {margin: 40px 0 30px;}
+	.dp-box .img-area {width:100%; margin: 0; max-width: 100%;}
+	.dp-box .img-area img {margin-top:20px; width:100%;}
+	.dp-box.tp .title-area, .dp-box.bt .title-area {width:100%;}
+
+	.dr-fact03 .title-area {padding-left: 4.5%; padding-right: 2%;}
+	.doctorlee-paper .f32 {font-size:1.75rem;}
+
+	/*임플란트*/
+	.implant02 {padding:50px 0;}
+	.numbox.tp {margin: 40px 0 90px;}
+	.numbox .imgbox {width:100%; margin: 0; max-width: 100%;}
+	.numbox .imgbox img {width:100%;}
+	.numbox.tp .txtbox, .numbox.bt .txtbox {margin: 57px 0 0 0; width:100%; padding:0; word-break:keep-all;}
+
+	.numbox.tp .txtbox p.m-60, .numbox.bt .txtbox p.m-60 {margin-top:30px;}
+
+	/*라미네이트*/
+	.lami03 .title-area {padding:0;}
+	.lami01, .lami02, .lami03, .lami04, .lami05, .lami07, .lami08 {padding:50px 0;}
+	.lami02 {padding-bottom:0;}
+	.lami04 {background-size:80%;}
+
+	/*치아미백*/
+	.white01, .white02, .white03, .white04 {padding:50px 0;}
+	.white01 {padding-bottom:0;}
+	.white02 {padding:20px 0;}
+
+	/*충치보존치료*/
+	.box-2 .box-2-inner {width:100%; padding:10px; box-sizing:border-box;}
+	.box-2 .box-2-inner > .con-box {min-height:auto; padding:20px 10px;}
+	.box-2 .box-2-inner > .con-box > span.num {padding:12px; font-size:1.125rem;}
+	.box-2 .box-2-inner > .con-box > p {padding-left:20px; line-height:1.5;}
+
+
+}
+
+/*960*/
+@media screen and (max-width:960px) {
+	/*브랜드스토리 box*/
+	.visual-img-txt {left:50px;}
+	.box-2dp .img, .box-2dp .txt {width:100%;}
+	.brandstory-bg {background:url("/images/brandstory_new.jpg")no-repeat top right 30%;}
+	.drlee-profile {width:540px;}
+	/*이준영대표원장*/
+	.doctor-top .imgs {position: absolute; right:2%; width:50%; bottom:0;}
+
+	/*임플란트*/
+	.implant-bg {height:65vh;}
+
+	.thumbs div.inner {width:50%; margin:20px 0;}
+	.thumbs div.inner img {width:100%;}
+
+	.implant03, .implant05, .implant06 {padding:50px 0;}
+	.implant04 .dp_sb {display:block;}
+	.implant04 .title-area {width:100%; margin-top:30px;}
+
+	.implant04 .img-area {width:100%; margin-top:20px;}
+	.implant04 .img-area img {width:100%;}
+
+	/*라미네이트*/
+	.lami-bg {height:65vh;}
+
+	/*치아미백*/
+	.white-bg {height:65vh; background-size:cover;}
+	.list4 {margin-top:30px;}
+	.list4 li {width:50%; margin:20px 0; min-height:120px; padding:2% 5%;}
+	.list4 li:nth-child(2) {border-right:none;}
+
+	.list4 li h2.f28 {font-size:1.375rem;}
+
+	.white04 {padding:50px 0;}
+
+	/*충치보존치료*/
+	.treat-bg {height:65vh; background-size:cover;}
+
+	.cureSwiper .cure-imgs, .cureSwiper .cure-txts {width:100%; padding:20px;}
+	.box-4 .box-4-inner {width:100%; padding:2% 4%;}
+	.box-4 .box-4-inner div {min-height:120px;}
+	.box-4 .box-4-inner:not(:last-child) {border-right:none; border-bottom:1px dotted #d1d1d1;}
+
+	.box-3.m_80 {margin-bottom:0;}
+	.box-3 .box-3-inner {width:100%;}
+	.box-3 .box-3-inner:not(:last-child) {border-right:none; border-bottom:1px dotted #d1d1d1;}
+
+	.gum .dp_f {flex-wrap: wrap;}
+	.sub6-2-point03-item {width: 50%;margin-right: 0;margin-bottom: 11%; padding:0 15px; box-sizing:border-box;}
+	.sub6-2-point03-img {margin-bottom: 1.2rem;}
+	.sub6-2-point03-item::after {display:none;}
+
+	/*사랑니발치*/
+	.wisdom-bg {height:65vh; background-size:cover;}
+	.list3 {margin-top:30px;}
+	.list3 li {width:100%;padding:6%; min-height:120px;}
+	.list3 li:not(:last-child) {border-right:none; border-bottom:1px dotted #d1d1d1;}
+
+	.wisdom01, .wisdom02, .wisdom03, .wisdom04, .wisdom05 {padding:50px 0;}
+	.wisdom01 {padding-bottom:0;}
+
+	/*커뮤니티*/
+	.cs-bg {height:45vh; background-size:cover;}
+}
+
+/* 768 tablet */
+@media screen and (max-width:768px) {
+	.pc {display:none;} 
+	.mo {display:block;}
+	.rnb{width: 90%;max-width: 360px;}
+	#gnb > h2 {margin-bottom: 1rem;}
+	.rnb .main-menu, .rnb .sub-menu {margin-bottom: 2.5rem;}
+	.rnb .main-menu li {margin-bottom: 0.5rem;}
+	.rnb .sub-menu li {margin-bottom: 0.5em;}
+	.nav-title1.m-60 {margin-top:2.5rem;}
+
+	.main-con01{margin:50px 0 0 0 ; background:url('/images/typo_bg1.png') no-repeat left 95%;background-size:80%; padding-bottom:100px;}
+	/*.main-con01:before{width:50%; height:350px; top: 150px; }*/
+	.main-con01:before{ width: 100%; top: 300px; }
+	.main-con01.on:before{ width: 100%; }
+	.main-con01 .case-slide .wrap2 .left_w img{ box-shadow: 12px 12px 40px rgba(0,0,0,0.2);}
+	.main-con01 .case-slide .wrap2 .right_w .text-box span{left: -10px; }
+	.main-con01 .case-slide .wrap2 .right_w .text-box strong{padding-left: 35px; }
+	.main-con01 .case-slide .wrap2 .right_w .text-box p{/* font-size:1rem; */padding-left: 35px;/*display:none;*/ }
+	.main-con01 .case-slide .wrap2 .right_w .text-box strong:before{ width: 20px; }
+	.main-con01 .case-slide .wrap2 .right_w .next_w {display:none;}
+	/*.main-con01 .case-slide .wrap2 .right_w .next_w span{left: -2px;}*/
+
+	.main-con01 .main_tit{ margin-bottom: 40px; padding-left: 0; line-height:1.4;}
+	.main-con01 .case-slide .wrap2 .left_w{ float: none; width: 100%; }
+	.main-con01 .case-slide .wrap2 .right_w{ float: none; width: 100%; }
+	/*.main-con01:before{ width: 100%; top: 300px; }*/
+	.main-con01 .case-slide .wrap2 .right_w{ position: relative; padding-bottom: 50px; }
+	/*
+	.main-con01 .case-slide .wrap2 .right_w .next_w{ width: 50%; position: absolute; right: 0; bottom: -0;  }
+	*/
+	
+
+	.main-con03 {padding:80px 0;}
+	.main-con03 .imgs {width:90%;}
+	.main-con03 .text-box {line-height:1.4;}
+	.main-con03 .more-bt {margin-top:50px;}
+
+	.main-con04 {margin:50px 0 0 0 ; background:url('/images/typo_bg2.png') no-repeat left 95%;background-size:60%; padding-bottom:200px;}
+	.main-con04:before{width: 100%; height:250px; top: 280px;}
+	.main-con04.on:before {width: 100%;}
+
+	.main-con04 .case {position:relative; width: 100%; height:30vh; /*background:#000;*/ margin: 0 auto; overflow:hidden;}
+	.main-con04 .case iframe {width:100vw; height:56.25vw; min-height:100vh; min-width:177.77vh; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+
+	.main-con05 .maps {display:none;}
+	.mo-map-btn {display:block;}
+
+	.main-con05 .location .text-box {padding:20px 0 20px 30px;}
+	.location {background:url('/images/loca_bg.png') no-repeat right -40% bottom 2%; background-size:80%;}
+	.time-list li > ul li {float:left; margin:5px 0; font-size:1.250rem;}
+	.time-list li > ul li:first-child {width:20%;}
+
+
+	.main-con06{margin-top:50px;  background:url('/images/typo_bg3.png') no-repeat top right -5px; background-size:80%; padding-bottom:0;}
+
+	.sns-link-bnr {padding:2% 0 8% 0;}
+	.sns-link-bnr .container {padding: 0;}
+
+	/*브랜드스토리*/
+	.visual-img-txt {display:none;}
+	.brand-sec01 {background-size:80%; padding-bottom:100px;}
+	
+	.drlee-profile {width:480px;}
+	.brandstory-top .top-content {top:20%;}
+	.brandstory-top .top-content p.f42 {font-size:2rem;}
+
+	.box-2dp .txt {padding:80px 20px;}
+	.brand-sec02 .brand-txt {padding:0 20px; word-break:keep-all;}
+
+    .brand-sec05 {height:320px; background-position:center 40%; background-size:180%; background-attachment: scroll !important;}
+
+	.brand-sec02 .brand-txt:before, .brand-sec02 .brand-txt:after {width:22px; height:22px; background-size:100%;}
+
+	/*이준영대표원장*/
+	.doctor-top .imgs {position: absolute; right:15%; width:70%;  bottom:-30px;}
+	.doctor-top {position:relative; height:150vh; max-height:1030px;}
+	.doctor-top h2.f44 {font-size:2rem;}
+
+	.listen3 {margin-top:50px; padding:0 0 0 0;}
+	.listen3 .dp_sb {display:inline-block;}
+	.listen3 li{width:50%; float:left; word-break: keep-all; text-align:center; margin-bottom:15px; padding:0 10px; box-sizing:border-box;}
+	.listen3 .circle:after {display:none;}
+
+	
+
+	.dr-fact04 {padding:50px 0;}
+	.doctorlee-paper {margin-top:80px; padding:12% 0;}
+	.certi-slide{width:90%;}
+
+
+	.point-box-wrap .point-box {padding:0 12px; box-sizing:border-box;}
+	.point-box-wrap .point-box p.f22 {font-size:1rem;}
+
+	.dr-fact01.m-100 {margin-top:50px;}
+
+
+	/*임플란트*/
+	.implant-bg {background-size:cover;}
+	.implant05 p.f38 {font-size:1.875rem; margin-bottom:20px;}
+	.sub-bna-img .img-area {width:45%;}
+	.sub-bna-img:before {top:40%;}
+	
+	.implant02 p.f30 {font-size:1.625rem;}
+
+	/*라미네이트*/
+	.lami-top .f32 {font-size:1.5rem;}
+	.lami-bg {background-size:cover;}
+	/*.lami03 .dp-box, .lami05 .dp-box {margin:0 0;}*/
+	.lami03 .dp-box {margin:0 0;}
+
+	.lami06 {padding:20px; box-sizing:border-box;}
+	.lami06 .lami-txt:before, .lami06 .lami-txt:after {width:22px; height:22px; background-size:100%;}
+	.lami06 p.f32 {font-size:1.5rem;}
+
+
+	.hide-con h3.f32 {font-size:1.5rem;}
+	.scroll-img-wrap {overflow-x:scroll;}
+	.scroll-img {width:500px;}
+
+
+	/*치아미백*/
+	.white04 p.f38 {font-size:1.875rem; margin-bottom:20px;}
+
+	.wide-img {height:200px;}
+	.wide-img img {height:100%;}
+
+	/*충치보존치료*/
+	.treat01 {padding:50px 0 100px 0;}
+	.treat-top .f38 {font-size:1.5rem;}
+	.treat-top .f24 {font-size:1.250rem;}
+
+	.treat-txt:before, .treat-txt:after {width:22px; height:22px; background-size:100%;}
+
+	.bg-area.p-80 {padding-top:50px;}
+	.bg-area.p_100 {padding-bottom:50px;}
+
+
+	/*커뮤니티*/
+	.cs01 {padding:50px 0;}
+
+	.top-content div.f42 {font-size:2rem;}
+}
+
+
+/* 640 */
+@media screen and (max-width:640px) {
+	/*.main-con03 .imgs {right:2%; width:70%;}*/
+
+	/*브랜드스토리*/
+		
+	.brandstory-bg {height:65vh; background: url(/images/brandstory_new.jpg)no-repeat center left;}
+	.drlee-profile {width:75%; left:42%; margin-left:0;}
+
+	.implant02 {background:url('/images/benefit_bg.png') no-repeat right 100%; background-size:80%;}
+}
+
+/* 480 */
+@media screen and (max-width:480px) {
+	html,body {font-size: 12px;}
+}
+
+/* 375 mobile */
+@media screen and (max-width:375px) {
+
+}
+
+
+@media only screen and (orientation: portrait) {
+	.gnb-foot-address{flex-wrap: wrap;}
+	.gnb-foot-address address,.gnb-foot-address .call-num{width: 100%;}
+}

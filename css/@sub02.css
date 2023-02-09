@@ -1,0 +1,437 @@
+/* sub공통 css */
+
+.sidebar {width:1200px;height:50px;margin:0 auto;}
+
+.sidemenu{
+	float:left; width:220px;
+}
+
+.s-menu-title {width:100%;height:120px;line-height:120px;text-align:center;background:#0062b1;color:#ffffff;font-size:20px;font-weight:bold;}
+
+
+.sidemenu ul{
+	margin-top:15px;
+}
+
+.sidemenu li{
+	width:100%;
+	border:1px solid #dddddd;
+	background:#ffffff;
+	border-bottom:none;
+	padding:15px 20px 15px 20px;
+	box-sizing:border-box;
+}
+
+.sidemenu li:last-child{
+	border-bottom:1px solid #dddddd;
+}
+
+.sidemenu .toggle {
+	position:relative;
+	border-bottom:1px solid #dddddd;
+}
+
+.sidemenu .toggle::before {
+	content:"";
+	position:absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 30px;
+	width: 13px;
+	height:3px;
+	background:#333;
+}
+
+.sidemenu .toggle::after {
+	content:"";
+	position:absolute;
+	top: 50%;
+	transform:translateY(-50%) rotate(90deg);
+	right: 30px;
+	width: 13px;
+	height:3px;
+	background:#333;
+	transition:all 0.3s;
+}
+
+.accordion-toggle.active-tab::before {
+	background:#fff;
+}
+
+
+.accordion-toggle.active-tab {
+	background:#333;
+  transition: all 0.3s ease;
+}
+.accordion-toggle.active-tab a {
+  color:#ffffff !important;
+  transition: all 0.3s ease;
+  font-weight:bold;
+}
+
+.box_L_s_a {color:#0062b1; font-weight:bold;}
+
+
+.accordion-toggle.active-tab::after {
+	transform:translateY(-50%);
+	background:#fff;
+}
+
+.accordion-content {display:none;}
+
+
+.menu-submenu li:first-child {
+	border-top:none;
+}
+
+.menu-submenu li {
+	position:relative;
+	font-size:14px;
+	padding:15px 0 15px 40px;
+	background-color:#eee;
+	border:1px solid #d1d1d1;
+	box-sizing:border-box;
+}
+.menu-submenu li::before {
+	content:"·";
+	position:absolute;
+	left: 25px; 
+	top:50%; 
+	transform:translateY(-50%);
+
+}
+
+.content_box{
+	position:relative;
+	width:950px;
+	float:right;
+	background:#ffffff;
+	border:1px solid #dddddd;
+	padding:24px;
+	box-sizing:border-box;
+	margin-bottom:30px;
+}
+
+.content_box_a{
+	background:#333333 !important;
+	color:#ffffff;
+	font-weight:bold;
+}
+.content_title{
+	width:100%; color:#0062b1; padding-left:14px; border-left: 5px solid #0062b1; margin:40px 0; font-size: 28px; font-weight: 700;
+}
+
+.sub-wrap {width:1200px; margin:0 auto;}
+
+/* sub공통 css */
+
+
+
+/*************sub공통 반응형 제작************************/
+/*화면 너비 0 ~ 1200px*/
+@media (max-width: 1200px){
+	.sub-wrap {width:100%;}
+	.sidebar {width:100%;}
+	.sidemenu{
+		display:none;
+	}
+	.content_box  {float:none; margin: 0 auto;}
+}
+
+/*화면 너비 0 ~ 960px*/
+@media (max-width: 960px){
+
+	.content_box {width:100%;}
+	.sbfirst {display:none;}
+
+}
+/*************sub공통 반응형 제작************************/
+
+
+
+
+/* 서브04/sub01.php css */
+input {height: 30px; padding-left:15px; border:1px solid #bbb;}
+textarea {padding:15px;}
+
+.content_box .tit1{font-weight: 700; font-size: 35px; color: #333; text-align: center;}
+.content_box .tit1:after{content: ""; display: block; width: 50px; height: 5px; background-color: #0E5AA7; margin: 15px auto 50px;}
+
+
+.form01Wrap > div {box-sizing: border-box; border-bottom: 1px solid #c7c7c7;}
+.form01Wrap > div:nth-child(1) {border-top: 2px solid #676767;}
+.form01Wrap > div:nth-child(8)  {border-bottom:none;}
+.form01Wrap > div h4 {float:left; width: 21%; padding: 20px 0 20px 2%; background: #f5f5f5; font-size:16px; }
+.form01Wrap > div .subcon {float:left; width: 74%; padding: 15px 0 15px 3%;}
+
+.typelist .subcon label {margin-right:10px; font-size:15px;}
+.typelist .subcon input {position:relative; top: -4px; width: 13px; height: 13px; margin-right: 10px;}
+.company .subcon input {width: 308px;}
+
+.com_num .subcon input:nth-child(1) {width:80px; }
+.com_num .subcon input:nth-child(2) {width:60px; }
+.com_num .subcon input:nth-child(3) {width:130px;}
+
+
+.contact .subcon input:nth-child(1) {width:80px;}
+.contact .subcon input:nth-child(2) {width:80px;}
+.contact .subcon input:nth-child(3) {width:80px;}
+
+
+.email .subcon > input:nth-child(1) {width:140px;}
+.email .subcon > input:nth-child(2) {width:140px;}
+.email .subcon #email_sel {margin-left: 15px; width: 180px; height:30px; border:1px solid #bbb;}
+
+
+.contbox:nth-child(7) h4 {padding: 94px 0 94px 2%;}
+
+.contbox h4 span {display: block; margin-top: 10px; font-size: 13px; color: #333; font-weight: 400;}
+.contbox .subcon textarea {width: 96%; height: 230px; resize: none;}
+
+.agreeBox {margin-top:50px;}
+.agreeBox  p {font-weight:700; font-size: 20px; color:#0062b1;}
+
+.agreeBox .fr {margin:20px 0 70px 0; float:right;}
+.agreeBox .squaredThree label {top:3px; width:14px; height:14px;}
+
+.submitBtn {display:block; margin:41px auto 70px; width: 160px; height: 45px; line-height:45px; color: #fff; background-color:#0062b1; text-align:center;}
+/* 서브04/sub01.php css */
+
+/*************서브04/sub01.php 반응형 제작************************/
+/*화면 너비 0 ~ 768px*/
+@media (max-width: 768px){
+
+.form01Wrap > div:nth-child(1) h4 {padding:35px 0 35px 2%;}
+.form01Wrap > div h4 {width:23%;}
+.form01Wrap > div .subcon {width:72%;}
+.typelist .subcon label {display:block;}
+
+}
+
+@media (max-width: 540px){
+
+input {width: 100%;}
+.formtitle {font-size: 23px; margin-bottom:40px;}
+
+.form01Wrap > div h4 {float:none; width:100%; padding:10px 0; font-size: 15px; text-indent:10px; border-bottom:1px solid #c7c7c7;}
+.form01Wrap > div:nth-child(1) h4 {padding:10px 0; }
+.contbox:nth-child(7) h4 {padding:15px 0;}
+.form01Wrap > div .subcon {float:none; width: 96%; padding:20px 2%;}
+.contbox h4 span br {display:none;}
+.subcon {background-color:#fcfcfc;}
+
+.company .subcon input {width:100%;}
+.contact .subcon input:nth-child(1) {width:28%;}
+.contact .subcon input:nth-child(2) {width:28%;}
+.contact .subcon input:nth-child(3) {width:28%;}
+
+.com_num .subcon input:nth-child(2) {width: 65px;}
+
+.email .subcon > input:nth-child(1) {width: 46.5%;}
+.email .subcon > input:nth-child(2) {width: 46.5%;}
+.email .subcon #email_sel {width: 100%; margin-top:10px; margin-left:0;}
+
+.agreeBox {margin-top:20px;}
+.agreeBox p {text-align:center;}
+.agreeBox .fr {float:none;}
+}
+
+/*************서브04/sub01.php 반응형 제작************************/
+
+
+/* 서브04/sub02.php css */
+select {height: 30px; border:1px solid #bbb;}
+.addBtn {width:100%; margin:10px 0 30px 0; background:#005FAD; height:45px; cursor: pointer; }
+.addBtn .fa-plus {float:left; display:block; width: 30px; margin:0 auto; line-height:45px; color: #fff; font-size: 20px;}
+.addBtn .ct {margin:0 auto; width: 160px;}
+.addBtn span {float:left; color: #fff; font-size: 17px; font-weight: 600; line-height:45px;}
+
+.form02Wrap .submitBtn {width:200px;}
+
+.form02Wrap > div {margin-top:70px;}
+.form02Wrap > div:first-child {margin-top:0;}
+.form02Wrap > div h5 {font-size: 18px; width:100%; color:#0062b1; padding-left:14px; border-left: 5px solid #0062b1;}
+.form02Wrap > div .form {width: 100%; padding-top:10px;}
+
+.form02Wrap > div .form h6 {margin-bottom:20px; font-size: 14px; text-indent:5px; color:#333}
+.form02Wrap > div .form .row_title {float:left; width:18%; font-size:16px; font-weight:bold; padding:20px 0 20px 2%; background-color:#f5f5f5;}
+.form02Wrap > div .form .row_input {float:left; width:78%; padding:17px 0 17px 2%;}
+.form02Wrap > div .form .business input {width:160px !important;}
+.form02Wrap > div .form .fax input {width:150px !important;}
+
+
+.form02Wrap .personinfo .form .row {border-top:1px solid #c7c7c7;}
+.form02Wrap .personinfo .form .row:first-child {border-top:2px solid #676767;}
+
+.form02Wrap .personinfo  .form .row:last-child {border-bottom:1px solid #c7c7c7;}
+.form02Wrap .personinfo .form .cellphone .row_input input {width: 80px;}
+.form02Wrap .personinfo .form .address .row_input select {width:20%;}
+.form02Wrap .personinfo .form .address .row_input input {width: 21%;}
+
+.form02Wrap .schoolinfo div .form .fl100 {width:100%;}
+.form02Wrap .schoolinfo div .form .fl100 {border-top:2px solid #676767;}
+.form02Wrap .schoolinfo div .form .fl100 .row_title {width:10%; text-align:center; padding:20px 0; background-color:#f5f5f5;}
+.form02Wrap .schoolinfo div .form .fl100 .row_input {width: 86%;  padding:17px 2%; font-size:0;}
+.form02Wrap .schoolinfo div .form .fl100 .row_input input {width:20%;}
+.form02Wrap .schoolinfo div .form .fl100 .row_input select {width:15%; margin-left:5px;}
+.form02Wrap .schoolinfo div .form .fl33{float:left; width:33.333333%; border-bottom:1px solid #c7c7c7;}
+.form02Wrap .schoolinfo div .form .fl33 .row_title {width:30%; text-align:center; padding:20px 0; background-color:#f5f5f5;}
+.form02Wrap .schoolinfo div .form .fl33 .row_input {width: 58%; padding:17px 6%;}
+.form02Wrap .schoolinfo div .form .fl33 .row_input input {width:100%;}
+.form02Wrap .schoolinfo .form .row {border-top:1px solid #c7c7c7;}
+.form02Wrap .schoolinfo div .form .row_input span {font-size:16px; margin: 0 5px;}
+
+.form02Wrap .companyinfo .form .row {float:left; width:100%; border-top:1px solid #c7c7c7;}
+.form02Wrap .companyinfo .form .row.f50 {width:50%;}
+.form02Wrap .companyinfo .form .row:nth-child(1) {border-top:2px solid #676767;}
+.form02Wrap .companyinfo .form .row:nth-child(2) {border-top:2px solid #676767;}
+.form02Wrap .companyinfo  .form .row:nth-child(4) {border-bottom:1px solid #c7c7c7;}
+.form02Wrap .companyinfo  .form .row:last-child {border-bottom:1px solid #c7c7c7;}
+.form02Wrap .companyinfo .form .row_input {padding: 17px 4%; width: 68%;}
+.form02Wrap .companyinfo .form .row:nth-child(3)  .row_input {padding: 17px 2%; font-size:0;}
+.form02Wrap .companyinfo .form .f50 .row_input  input {width:100%;}
+.form02Wrap .companyinfo .form .row_input select {margin-left:5px;}
+.form02Wrap .companyinfo  .form .row:nth-child(3) .row_title {width: 9%;}
+.form02Wrap .companyinfo  .form .row .row_title {padding: 20px 0; text-align:center;}
+.form02Wrap .companyinfo  .form .row_input span {font-size:16px; margin: 0 5px;}
+
+.form02Wrap .certifi-info .f-wrap {padding-top:30px;}
+.form02Wrap .certifi-info .form {padding-top:0;}
+.form02Wrap .certifi-info .form .row {float:left; width:20%;}
+.form02Wrap .certifi-info .form .row .row_title {width:100%; display:none; text-align:center; border-top:1px solid #c7c7c7; border-bottom:1px solid #c7c7c7; border-right: 1px solid #c7c7c7; box-sizing: border-box;}
+.form02Wrap .certifi-info .f-wrap .form:first-child .row .row_title {display:block;}
+.form02Wrap .certifi-info .f-wrap .form .row .row_title {border-top:2px solid #676767;}
+.form02Wrap .certifi-info .form .row:last-child .row_title {border-right:none;}
+.form02Wrap .certifi-info .form .row .row_input {width: 100%; border-bottom:1px solid #c7c7c7;}
+.form02Wrap .certifi-info .form .row .row_input input {width: 94%; margin: 0 2%;}
+
+.form02Wrap .area-info .form .row {float:left; width:33.333333%; border-top:2px solid #676767; border-bottom:1px solid #c7c7c7;}
+.form02Wrap .area-info .form .row .row_title {width:18%; padding:20px 0; background-color:#f5f5f5; text-align:center;}
+.form02Wrap .area-info .form .row .row_input {width: 70%; padding:17px 6%;}
+.form02Wrap .area-info .form .row .row_input input {width: 100%;}
+
+.form02Wrap .workinfo h5 span {margin-left:10px; font-size:13px; color: #333; font-weight:400;}
+.form02Wrap .workinfo .row {float:left; width:30%;}
+.form02Wrap .workinfo .row:nth-child(1) {border-top:2px solid #676767; border-bottom:1px solid #c7c7c7;}
+.form02Wrap .workinfo .row:nth-child(2) {border-top:2px solid #676767; border-bottom:1px solid #c7c7c7;}
+.form02Wrap .workinfo .row:nth-child(3) {width:40%; border-top:2px solid #676767; border-bottom:1px solid #c7c7c7;}
+.form02Wrap .workinfo .row:last-child {width:100%; border-bottom:1px solid #c7c7c7;}
+.form02Wrap .workinfo .form .row .row_title {width:30%; padding:20px 0; background-color:#f5f5f5; text-align:center;}
+.form02Wrap .workinfo .form .row .row_input {width: 58%; padding:17px 6%;}
+.form02Wrap .workinfo .form .row .row_input input {width: 100%;}
+.form02Wrap .workinfo .row:nth-child(3) .row_title {width:20%;}
+.form02Wrap .workinfo .row:nth-child(3) .row_input {width:68%;}
+.form02Wrap .workinfo .row:nth-child(3) .row_input input {width:42%;}
+.form02Wrap .workinfo .form .row.row:last-child .row_title {width:9%; padding:55px 0;}
+.form02Wrap .workinfo .form .row.row:last-child .row_input {width:86%; padding: 17px 2%;}
+.form02Wrap .workinfo .form .row.row:last-child .row_input textarea {width:100%; height:100px; border:1px solid #bbb; resize: none;}
+
+.form02Wrap .etcinfo {border-bottom:1px solid #c7c7c7;}
+.form02Wrap .etcinfo textarea {width: 100%; height:130px; border:1px solid #bbb; resize: none;}
+
+.form02Wrap .sybox {margin:50px 0; color:#333;}
+.form02Wrap .sybox p:nth-child(1) {padding-left:20px;}
+.form02Wrap .sybox p:nth-child(2) {margin-top: 50px;}
+
+/* 서브04/sub02.php css */
+
+
+/*************서브04/sub02.php 반응형 제작************************/
+
+/*화면 너비 0 ~ 768px*/
+@media (max-width: 768px){
+
+
+}
+
+@media (max-width: 540px){
+
+	input {width: 100%;}
+	.addBtn {margin:20px 0; height:40px; }
+	.addBtn .fa-plus {width: 24px; line-height:40px;font-size: 17px;}
+	.addBtn .ct {width: 140px;}
+	.addBtn span {font-size: 15px; line-height:40px;}
+
+
+	.content_box .tit1{font-size: 24px;}
+	.content_box .tit1:after{width: 35px;}
+
+
+
+	.form {background-color:#fcfcfc;}
+
+	.form02Wrap > div {margin-top:40px;}
+	.form02Wrap > div .form {padding: 20px 2%; width: 96%;}
+	.form02Wrap > div .form .row {margin: 10px 0;}
+	.form02Wrap > div .form .row_title {width:100%; text-indent:10px; font-size:15px; padding:10px 0; float:none;}
+	.form02Wrap > div .form .row_input {width: 96%; float:none; padding: 17px 2%;}
+
+	.form02Wrap .personinfo .form .cellphone .row_input input {width:30%;}
+	.form02Wrap .personinfo .form .email .row_input input {width:46%;}
+	.form02Wrap .personinfo .form .email .row_input select {width: 98%; margin-top:10px;}
+	.form02Wrap .personinfo .form .address .row_input select {width: 48%;}
+	.form02Wrap .personinfo .form .address .row_input input {width:98%; margin-top:10px;}
+
+	.form02Wrap .schoolinfo div .form .fl100 .row_input {width:96%;}
+	.form02Wrap .schoolinfo div .form .fl100 .row_title {width:100%; padding:10px 0; text-align:left;}
+	.form02Wrap .schoolinfo div .form .fl100 .row_input input {width:25%;}
+	.form02Wrap .schoolinfo div .form .fl100 .row_input select {width:19%;}
+	.form02Wrap .schoolinfo div .form .fl33 {width:100%; margin:0; float:none; border-bottom:none;}
+	.form02Wrap .schoolinfo div .form .row:last-child {border-bottom:1px solid #c7c7c7;}
+	.form02Wrap .schoolinfo div .form .fl33 .row_title {width:100%; padding:10px 0; text-align:left;}
+	.form02Wrap .schoolinfo div .form .fl33 .row_input {width:96%; padding: 17px 2%; margin-bottom:10px;}
+
+	.form02Wrap .companyinfo .form .row:nth-child(3) .row_title {width:100%;}
+	.form02Wrap .companyinfo div .form .row:nth-child(3) .row_input input {width:35%;}
+	.form02Wrap .companyinfo div .form .row:nth-child(3) .row_input select {width:20%;}
+	.form02Wrap .companyinfo .form .row {float:none;}
+	.form02Wrap .companyinfo div .form .row .row_title {width:100%; padding:10px 0; text-align:left;}
+	.form02Wrap .companyinfo .form .row_input {padding: 17px 2%; width: 96%;}
+	.form02Wrap .companyinfo .form .row.f50 {width:100%;}
+	.form02Wrap .companyinfo .form .row:nth-child(2) {border-top:none;}
+
+
+	.form02Wrap .certifi-info .form {padding:0 2%; margin-bottom:50px;}
+	.form02Wrap .certifi-info .form .row {float:none; width: 100%; margin:5px 0 !important;}
+	.form02Wrap .certifi-info .form .row .row_input {width:96%; padding:10px 2%; border-bottom:none;}
+	.form02Wrap .certifi-info .form .row:last-child .row_input {border-bottom:1px solid #c7c7c7;} 
+	.form02Wrap .certifi-info .form .row .row_title {display:block; border-right:none;  text-align:left;}
+	.form02Wrap .certifi-info .f-wrap .form .row:first-child .row_title {border-top:2px solid #676767;}
+
+	.form02Wrap .certifi-info .form .row .row_input input {width:100%; margin:0;}
+	.form02Wrap .certifi-info .f-wrap .form .row .row_title {border-top:1px solid #f7f7f7; border-bottom:none;}
+	.form02Wrap .certifi-info .f-wrap .form .row:first-child .row_title {border-top:2px solid #676767;}
+
+
+	.form02Wrap .area-info .form .row {width:100%; float:none; margin:5px 0 !important; border-bottom:none; border-top:none;}
+	.form02Wrap .area-info .form .row:first-child {border-top:2px solid #676767;}
+	.form02Wrap .area-info .form .row:last-child {border-bottom:1px solid #c7c7c7;} 
+	.form02Wrap .area-info .form .row .row_input {width:96%; padding:10px 2%;}
+	.form02Wrap .area-info .form .row .row_title {width:100%; padding: 10px 0;  text-align:left;}
+	.form02Wrap .workinfo .row:nth-child(3) {width:100%;}
+	.form02Wrap .workinfo .row:nth-child(3) .row_input input {width:45%;}
+
+
+	.form02Wrap > div .form .row {float:none; width:100%; margin: 5px 0 !important;}
+	.form02Wrap .workinfo .form .row .row_title {width:100%; padding:10px 0;  text-align:left;}
+	.form02Wrap .workinfo .form .row .row_input {width:96%; padding: 10px 2%;}
+	.form02Wrap .workinfo .form .row.row:last-child .row_title {width:100%; padding: 10px 0;}
+	.form02Wrap .workinfo .form .row.row:last-child .row_input {width:100%;}
+	.form02Wrap .workinfo .form .row.row:last-child .row_input textarea {width:98%;}
+	.form02Wrap .workinfo .row:nth-child(1) {border-bottom:none;}
+	.form02Wrap .workinfo .row:nth-child(2) {border-bottom:none; border-top:1px solid #c7c7c7;}
+	.form02Wrap .workinfo .row:nth-child(3) {border-bottom:none; border-top:1px solid #c7c7c7;}
+	.form02Wrap .workinfo .row:nth-child(4) {border-bottom:none; border-top:1px solid #c7c7c7;}
+	.form02Wrap .workinfo h5 span {display:block; margin-top:10px; margin-left:0px;}
+
+
+	.form02Wrap .sybox p:nth-child(1) {text-indent:0; text-align:center; padding-left:20px; padding-right: 20px; word-break: keep-all;}
+	.form02Wrap .sybox p:nth-child(1) br {display:none;}
+	.form02Wrap .etcinfo {border-bottom:none;}
+
+	.agreeBox {margin-top:20px;}
+	.agreeBox p {text-align:center;}
+	.agreeBox .fr {float:none;}
+}
+
+/*************서브04/sub02.php 반응형 제작************************/
