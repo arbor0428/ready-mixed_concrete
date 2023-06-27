@@ -1,18 +1,4 @@
-<?
-	include "/home/hkone/www/module/login/head.php";	
-	include "/home/hkone/www/module/class/class.DbCon.php";
-	include "/home/hkone/www/module/class/class.Util.php";
-	include "/home/hkone/www/module/class/class.Msg.php";
-	require_once '/home/hkone/www/module/Mobile-Detect-master/Mobile_Detect.php';
-	$detect = new Mobile_Detect;
 
-	if($detect->isiOS())						$UserDevice = "ios";
-	elseif($detect->isAndroidOS())		$UserDevice = "android";
-	else										$UserDevice = "";
-	
-	if($detect->isMobile())	$UserOS = 'mobile';
-	else							$UserOS = 'pc';
-?>
 
 
     <header id="header" class="header">
